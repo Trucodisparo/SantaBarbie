@@ -1,4 +1,4 @@
-package com.keepcoding.androidavanzado.list
+package com.keepcoding.androidavanzado.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

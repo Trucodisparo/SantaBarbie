@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/ListFragment"
-        android:name="com.keepcoding.androidavanzado.list.ListFragment"
+        android:name="com.keepcoding.androidavanzado.presentation.ListFragment"
         android:label="ListFragment"/>
 
 </navigation>
