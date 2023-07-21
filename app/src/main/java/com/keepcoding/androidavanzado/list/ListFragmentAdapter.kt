@@ -9,7 +9,6 @@ class ListFragmentAdapter: RecyclerView.Adapter<ListFragmentAdapter.ListFragment
     private lateinit var list: List<String>
     class ListFragmentViewHolder(val binding: ListFragmentItemBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(name: String, position: Int){
-            println(name)
             with(binding){
                 tvName.text = name
             }

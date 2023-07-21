@@ -18,14 +18,13 @@ import com.keepcoding.androidavanzado.databinding.FragmentListBinding
 class ListFragment : Fragment() {
     private val viewModel: ListFragmentViewModel by viewModels()
     private lateinit var binding: FragmentListBinding
+    private var adapter = ListFragmentAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentListBinding.inflate(layoutInflater)
-        val adapter = ListFragmentAdapter()
-        adapter.submit(viewModel.getHeroList())
         binding.rvHeroList.adapter = adapter
         binding.rvHeroList.layoutManager = LinearLayoutManager(this@ListFragment.context)
         // Inflate the layout for this fragment
@@ -34,5 +33,6 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        adapter.submit(viewModel.getHeroList())
     }
 }
