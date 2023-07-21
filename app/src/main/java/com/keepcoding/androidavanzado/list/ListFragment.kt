@@ -33,6 +33,8 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter.submit(viewModel.getHeroList())
+        viewModel.heroList.observe(viewLifecycleOwner){heroList ->
+            adapter.submit(heroList)
+        }
     }
 }
