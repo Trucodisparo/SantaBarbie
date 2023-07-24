@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.keepcoding.androidavanzado.databinding.ListFragmentItemBinding
-import com.keepcoding.androidavanzado.di.model.HeroModel
+import com.keepcoding.androidavanzado.domain.model.HeroModel
 
 class ListFragmentAdapter: RecyclerView.Adapter<ListFragmentAdapter.ListFragmentViewHolder>(){
     private lateinit var list: List<HeroModel>

@@ -1,4 +1,4 @@
-package com.keepcoding.androidavanzado.di.model
+package com.keepcoding.androidavanzado.di
 
 import com.keepcoding.androidavanzado.presentation.ListFragmentViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

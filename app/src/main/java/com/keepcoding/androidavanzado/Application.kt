@@ -1,8 +1,8 @@
 package com.keepcoding.androidavanzado
 
 import android.app.Application
-import com.keepcoding.androidavanzado.di.model.domainModule
-import com.keepcoding.androidavanzado.di.model.pesentationModule
+import com.keepcoding.androidavanzado.di.domainModule
+import com.keepcoding.androidavanzado.di.pesentationModule
 import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

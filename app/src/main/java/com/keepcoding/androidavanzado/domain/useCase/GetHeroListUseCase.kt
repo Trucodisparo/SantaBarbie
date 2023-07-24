@@ -1,6 +1,6 @@
 package com.keepcoding.androidavanzado.domain.useCase
 
-import com.keepcoding.androidavanzado.di.model.HeroModel
+import com.keepcoding.androidavanzado.domain.model.HeroModel
 
 class GetHeroListUseCase {
 

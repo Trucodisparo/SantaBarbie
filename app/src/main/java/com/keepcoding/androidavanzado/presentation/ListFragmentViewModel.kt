@@ -3,7 +3,7 @@ package com.keepcoding.androidavanzado.presentation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.keepcoding.androidavanzado.di.model.HeroModel
+import com.keepcoding.androidavanzado.domain.model.HeroModel
 import com.keepcoding.androidavanzado.domain.useCase.GetHeroListUseCase
 
 

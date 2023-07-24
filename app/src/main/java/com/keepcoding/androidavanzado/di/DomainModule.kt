@@ -1,4 +1,4 @@
-package com.keepcoding.androidavanzado.di.model
+package com.keepcoding.androidavanzado.di
 
 import com.keepcoding.androidavanzado.domain.useCase.GetHeroListUseCase
 import org.koin.dsl.module
