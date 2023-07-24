@@ -1,18 +1,8 @@
 package com.keepcoding.androidavanzado.di
 
 import com.keepcoding.androidavanzado.domain.useCase.GetHeroListUseCase
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
+import org.koin.dsl.module
 
-
-@Module
-@InstallIn(SingletonComponent::class)
-class DomainModule {
-
-    @Provides
-    fun providesGetHeroListUseCase(): GetHeroListUseCase{
-        return GetHeroListUseCase()
-    }
+val domainModule = module {
+    single {GetHeroListUseCase()}
 }
