@@ -4,13 +4,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.keepcoding.androidavanzado.databinding.ListFragmentItemBinding
+import com.keepcoding.androidavanzado.domain.useCase.model.HeroModel
 
 class ListFragmentAdapter: RecyclerView.Adapter<ListFragmentAdapter.ListFragmentViewHolder>(){
-    private lateinit var list: List<String>
+    private lateinit var list: List<HeroModel>
     class ListFragmentViewHolder(val binding: ListFragmentItemBinding): RecyclerView.ViewHolder(binding.root){
-        fun bind(name: String, position: Int){
+        fun bind(hero: HeroModel, position: Int){
             with(binding){
-                tvName.text = name
+                tvName.text = hero.name
             }
         }
     }
@@ -28,7 +29,7 @@ class ListFragmentAdapter: RecyclerView.Adapter<ListFragmentAdapter.ListFragment
         holder.bind(list[position], position)
     }
 
-    fun submit(list: List<String>){
+    fun submit(list: List<HeroModel>){
         this.list = list
         notifyDataSetChanged()
     }

@@ -1,8 +1,22 @@
 package com.keepcoding.androidavanzado.domain.useCase
 
+import com.keepcoding.androidavanzado.domain.useCase.model.HeroModel
+
 class GetHeroListUseCase {
 
-    fun invoke(): List<String> = listOf("Goku", "Vegeta", "Piccolo", "Frieza", "Krillin", "Future Trunks", "Gohan", "Cell", "Majin Buu", "Goten", "Trunks")
+    fun invoke(): List<HeroModel> = listOf(
+        HeroModel("Goku"),
+        HeroModel("Vegeta"),
+        HeroModel("Piccolo"),
+        HeroModel("Frieza"),
+        HeroModel("Krillin"),
+        HeroModel("Future Trunks"),
+        HeroModel("Gohan"),
+        HeroModel("Cell"),
+        HeroModel("Majin Buu"),
+        HeroModel("Goten"),
+        HeroModel("Trunks")
+    )
 
     //Devuelva una coleccion de Hero Model
 }
